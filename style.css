@@ -156,7 +156,18 @@ footer a:hover {
     text-decoration: underline;
 }
 
- 
+ /* Stil för kontaktinformationen i footern- (Elvira) */
+#kontakt {
+font-weight: 100;
+text-decoration: underline;
+}
+  #kontakt p {
+    background-color:#BAD7F2 ;
+    padding: 10px;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 10px;
+  }
    
 
 
@@ -284,3 +295,4 @@ footer a:hover {
   line-height: 1.6;
   margin-left: 20px;
 }
+
