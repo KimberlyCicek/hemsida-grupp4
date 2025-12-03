@@ -16,9 +16,16 @@ body {
     color: #000000;            /* Svart brödtext */
     font-family: "Inter", sans-serif;
     line-height: 1.6;
-    
-}
+ }   
 
+/*MAIN*/    
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+}
 /* 
    FÄRGER
   
@@ -94,6 +101,15 @@ header h1 {
   line-height: 1;
 }
 
+.header-gul-rubrik {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
 /* Menyn */
 nav ul {
   list-style: none;
@@ -123,14 +139,9 @@ nav a:hover {
   transform: scale(1.05);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
-/*MAIN*/
 
-main {
-    max-width: 1100px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    padding: 20px;
-}
+
+
 
 /*FOOTER*/
 
@@ -270,6 +281,72 @@ text-decoration: underline;
   background-color: #8f96bd;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   transform: scale(1.05);
+}
+
+
+/*ADOPTIONSPROCESSEN*/
+
+.adoption-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.adoption-title h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+/* Rad-layout – 50/50 */
+.step-row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+.step-row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Textdel – 50% bredd på desktop */
+.step-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.step-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.step-text p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+/* Bilddel – 50% bredd + bild skalas till textens höjd */
+/* NYTT – tvingar bilderna att aldrig bli högre än texten */
+.step-image {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;                /* ny rad */
+    max-height: 520px;               /* ny rad – justera efter smak */
+}
+
+.step-image img {
+    width: 100%;
+    height: 100%;                    /* ändrat från "auto" */
+    max-width: 100%;
+    max-height: 520px;               /* samma värde som ovan */
+    object-fit: contain;             /* eller "cover" om du vill beskära */
+    object-position: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 
