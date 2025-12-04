@@ -397,7 +397,7 @@
     background-color: #fdf3d6;
     border-radius: 8px;
   }
-
+/*Centrering samt stilsättning av bilder*/
   .omossimg {
     border-radius: 8px;
     margin-top: 1rem;
@@ -424,6 +424,8 @@
     margin: 0 auto;
   }
 
+  /*Indentering av textstycken*/
+
   p+p {
     text-indent: 1.5rem;
   }
@@ -443,7 +445,7 @@
     border: 1px solid #acb2d3;
     border-radius: 5px;
   }
-
+/*Radar upp delarna i formuläret*/
   #formsection {
     display: flex;
     justify-content: center;
